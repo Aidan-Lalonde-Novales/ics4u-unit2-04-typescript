@@ -16,13 +16,15 @@ const myStack = new Stack()
 
 // Input
 while (true) {
-  const tempInput = prompt('Enter a number to add to the stack (or pop/peek): ')
+  const tempInput = prompt('Enter a number (or pop/peek/clear): ')
 
   // Process
   if (tempInput === 'pop') {
     break
   } else if (tempInput === 'peek') {
     console.log(myStack.peekStack())
+  } else if (tempInput === 'clear') {
+    myStack.clearStack()
   } else {
     const tempNum = Number(tempInput)
     myStack.pushStack(tempNum)

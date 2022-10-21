@@ -40,6 +40,11 @@ class MrCoxallStack {
       return this.stack[this.stack.length - 1]
     }
   }
+
+  // clear method - clears all contents of the stack
+  clearStack(): void {
+    this.stack.length = 0
+  }
 }
 
 export = MrCoxallStack
